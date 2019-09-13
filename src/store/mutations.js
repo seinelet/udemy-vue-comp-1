@@ -1,3 +1,5 @@
-export const updateValue = (state, payload) => {
-  state.value = payload;
+export default {
+  updateValue: (state, payload) => {
+    state.value = payload;
+  }
 };

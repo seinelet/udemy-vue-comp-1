@@ -16,13 +16,13 @@ import { mapActions } from "vuex";
 
 export default {
   methods: {
-    ...mapActions(["increment", "decrement"]),
+    ...mapActions("counter", ["increment", "decrement"]),
     increment(by) {
-      this.$store.dispatch("increment", by);
+      this.$store.dispatch("counter/increment", by);
     },
 
     decrement(by) {
-      this.$store.dispatch("decrement", by);
+      this.$store.dispatch("counter/decrement", by);
     }
   }
 };
